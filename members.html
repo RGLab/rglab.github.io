@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>RGLAB::MEMBERS</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">RGLAB</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="research.html">
+    <span class="fa fa-pencil"></span>
+     
+    Research
+  </a>
+</li>
+<li>
+  <a href="publications.html">
+    <span class="fa fa-file-text"></span>
+     
+    Publications
+  </a>
+</li>
+<li>
+  <a href="software.html">
+    <span class="fa fa-laptop"></span>
+     
+    Software
+  </a>
+</li>
+<li>
+  <a href="members.html">
+    <span class="fa fa-user"></span>
+     
+    Members
+  </a>
+</li>
+<li>
+  <a href="contact.html">
+    <span class="fa fa-envelope"></span>
+     
+    Contact
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://twitter.com/raphg">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/RGLab">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">RGLAB::MEMBERS</h1>
+
+</div>
+
+
+<div id="raphael-gottardo" class="section level3">
+<h3>Raphael Gottardo</h3>
+<p><strong>Position</strong>: Principal Investigator<br />
+<strong>Interests</strong>: Bayesian modeling, Computational immunology, Flow cytometry, High dimensional modeling, HIV, Malaria, Statistical computing, Single cell assays<br />
+<strong>Websites</strong>: <a href="http://www.rglab.org/" class="uri">http://www.rglab.org/</a></p>
+</div>
+<div id="greg-finak" class="section level3">
+<h3>Greg Finak</h3>
+<p><strong>Position</strong>: Staff Scientist<br />
+<strong>Interests</strong>: Flow Cytometry, Single-Cell Analysis, Gene Expression, Bayesian Modeling, Statistical Computing, Biomarker Discovery<br />
+<strong>Websites</strong>: <a href="https://github.com/gfinak" class="uri">https://github.com/gfinak</a></p>
+</div>
+<div id="jacob-frelinger" class="section level3">
+<h3>Jacob Frelinger</h3>
+<p><strong>Position</strong>: Postdoctoral Fellow<br />
+<strong>Interests</strong>: Flow Cytometry, Scientific programming, “Big data”<br />
+<strong>Websites</strong>: <a href="https://github.com/jfrelinger" class="uri">https://github.com/jfrelinger</a></p>
+</div>
+<div id="lynn-lin" class="section level3">
+<h3>Lynn Lin</h3>
+<p><strong>Position</strong>: Postdoctoral Fellow<br />
+<strong>Interests</strong>: Bayesian statistics, Mixture modeling, Nonparametric Bayesian, Bayesian hypothesis testing, Statistical methods for large datasets, Statistics for immunology, Flow cytometry<br />
+<strong>Websites</strong>: <a href="http://stat.duke.edu/~ll86/" class="uri">http://stat.duke.edu/~ll86/</a></p>
+</div>
+<div id="sangsoon-woo" class="section level3">
+<h3>Sangsoon Woo</h3>
+<p><strong>Position</strong>: Postdoctoral Fellow<br />
+<strong>Interests</strong>: ChIP-seq, Epigenomics, Gene expression, Next generation sequencing</p>
+</div>
+<div id="greg-imholte" class="section level3">
+<h3>Greg Imholte</h3>
+<p><strong>Position</strong>: PhD Student, University of Washington<br />
+<strong>Interests</strong>: Bayesian modeling, Scientific programming, Statistical learning, Stochastic processes</p>
+</div>
+<div id="andrew-mcdavid" class="section level3">
+<h3>Andrew McDavid</h3>
+<p><strong>Position</strong>: PhD Student, University of Washington<br />
+<strong>Interests</strong>: Inference from heterogeneous samples with hierarchical models</p>
+</div>
+<div id="lev-leo-dashevkiy" class="section level3">
+<h3>Lev “Leo” Dashevkiy</h3>
+<p><strong>Position</strong>: System Analyst / Scientific Programmer<br />
+<strong>Interests</strong>: Flow cytometry, Data visualization, Scientific programming and computing, Client-side web development, Database design, R, JavaScript, SQL, LabKey<br />
+<strong>Websites</strong>: <a href="https://github.com/ldash" class="uri">https://github.com/ldash</a></p>
+</div>
+<div id="mike-jiang" class="section level3">
+<h3>Mike Jiang</h3>
+<p><strong>Position</strong>: System Analyst / Scientific Programmer<br />
+<strong>Interests</strong>: Flow cytometry, Scientific programming, R, C++<br />
+<strong>Websites</strong>: <a href="https://github.com/mikejiang" class="uri">https://github.com/mikejiang</a></p>
+</div>
+<div id="renan-sauteraud" class="section level3">
+<h3>Renan Sauteraud</h3>
+<p><strong>Position</strong>: System Analyst / Scientific Programmer<br />
+<strong>Interests</strong>: ChIP-seq, Peptide microarray, Next generation sequencing, Scientific programming, Data visualization, Data analysis</p>
+</div>
+<div id="jingyuan-deng" class="section level3">
+<h3>Jingyuan Deng</h3>
+<p><strong>Position</strong>: Bioinformatician<br />
+<strong>Interests</strong>: Next-generation sequencing, Microarray data analysis</p>
+</div>
+<div id="phu-van" class="section level3">
+<h3>Phu Van</h3>
+<p><strong>Position</strong>: Postdoctoral Fellow<br />
+<strong>Interests</strong>: Flow cytometry, Data visualization, Data analysis<br />
+<strong>Websites</strong>: <a href="https://github.com/ptvan" class="uri">https://github.com/ptvan</a></p>
+</div>
+<div id="alumni" class="section level2">
+<h2>Alumni</h2>
+<ul>
+<li><a href="http://kevinushey.github.io/">Kevin Ushey</a>, Data scientist at RStudio</li>
+<li><a href="http://blacklocus.com/">John Ramey</a>, Data scientist at Blacklocus</li>
+<li><a href="https://www.linkedin.com/in/drarnaud">Arnaud Droit</a>, Assistant Professor at Université Laval</li>
+<li><a href="http://www.cosbi.eu/people/people-research/marie-pier-scott-boyer">Marie-Pier Scott-Boyer</a>, Postdoctoral Fellow at The Microsoft Research - University of Trento Centre for Computational and Systems Biology</li>
+<li><a href="https://www.linkedin.com/pub/eloi-mercier/74/2b5/7b6">Eloi Mercier</a>, Computational Biologist at BC Cancer Agency</li>
+<li><a href="http://publish.illinois.edu/xiaohuichen/">Xiaohui Chen</a>, Assistant Professor, Department of Statistics, University of Illinois at Urbana-Champaign</li>
+<li><a href="http://www.stats.ox.ac.uk/~caron/">Francois Caron</a>, Research Fellow, Department of Statistics, Oxford University</li>
+<li><a href="http://www.people.fas.harvard.edu/~bornn/">Luke Bornn</a>, Assistant Professor, Department of Statistics, Harvard University</li>
+<li><a href="https://www.linkedin.com/pub/kaida-ning/14/4a3/b6">Kaida Ning</a>, PhD student at USC</li>
+<li><a href="https://www.linkedin.com/in/kenchlo">Kenneth Lo</a>, Data scientist at eBay</li>
+</ul>
+</div>
+
+<hr>
+<p>Copyright &copy; 2017 <a href="http://www.rglab.org/">rglab</a>. All right reserved.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

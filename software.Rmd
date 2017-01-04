@@ -1,0 +1,22 @@
+---
+title: "RGLAB::SOFTWARE"
+---
+
+## R packages
+
+Our group currently maintains the [R](https://www.r-project.org/) packages listed below, which can be downloaded directly from [Bioconductor](http://www.bioconductor.org/).
+
+- Packages for flow cytometry: [flowCore](http://www.bioconductor.org/packages/release/bioc/html/flowCore.html), [flowWorkspace](http://www.bioconductor.org/packages/release/bioc/html/flowWorkspace.html), [flowStats](http://www.bioconductor.org/packages/release/bioc/html/flowStats.html), [flowQ](http://www.bioconductor.org/packages/release/bioc/html/flowQ.html), [flowViz](http://www.bioconductor.org/packages/release/bioc/html/flowViz.html), [flowClust](http://www.bioconductor.org/packages/devel/bioc/html/flowClust.html), [flowMerge](http://www.bioconductor.org/packages/devel/bioc/html/flowMerge.html), [flowTrans](http://www.bioconductor.org/packages/devel/bioc/html/flowTrans.html), [QUALIFIER](http://www.bioconductor.org/packages/devel/bioc/html/QUALIFIER.html)
+- Packages for ChIP-Seq and motif analysis: [PICS](http://www.bioconductor.org/packages/devel/bioc/html/PICS.html), [PING](http://www.bioconductor.org/packages/devel/bioc/html/PING.html), [rGADEM](http://www.bioconductor.org/packages/devel/bioc/html/rGADEM.html), [MotIV](http://www.bioconductor.org/packages/devel/bioc/html/MotIV.html)
+- Packages for chip-chip and tiling arrays: [BAC](http://www.bioconductor.org/packages/devel/bioc/html/BAC.html), [rMAT](http://www.bioconductor.org/packages/devel/bioc/html/rMAT.html)
+- Packages for differential gene expression: [rama](http://www.bioconductor.org/packages/devel/bioc/html/rama.html), [bridge](http://www.bioconductor.org/packages/devel/bioc/html/bridge.html)
+
+
+## Labkey Server
+
+We also implement some of our statistical methods and tools in the [LabKey Server](http://labkey.com/).
+
+
+## GitHub
+
+Most of our work is openly accessible on [our github page](https://github.com/RGLab).

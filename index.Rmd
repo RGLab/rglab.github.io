@@ -1,0 +1,10 @@
+---
+title: "RGLAB::HOME"
+---
+
+> ## About us
+> We are part of the [Vaccine and Infectious Disease Division](http://www.fredhutch.org/en/labs/vaccine-and-infectious-disease.html) of the [Fred Hutchinson Cancer Research Center](https://www.fredhutch.org) in Seattle. We develop cutting edge statistical methods and software tools for the analysis of high throughput biological data with an emphasis on immunology and vaccine research. In particular we are interested in using system approaches, high throughput assays, and state-of-the-art computational approaches to predict how the immune system will respond to a particular infection of vaccination. We work with bench scientists and clinicians to understand and ultimately help develop vaccines and/or cure severe diseases such HIV, malaria and cancer.
+
+
+![](site_libs/img/Lab-photo.jpg)
+*From left to right: Jingyuan, Lynn, Mike, Sangsoon, Phu, Renan, Jacob, Leo, Raphael, Greg F., and Masanao.*
