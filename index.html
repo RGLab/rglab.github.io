@@ -1,286 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>RGLab</title>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-
-
-
-
-<title>RGLAB::HOME</title>
-
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
-
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
-
-
-
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-
-</head>
-
-<body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-  height: auto;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 66px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-
-.section h2 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h3 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h4 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h5 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-.section h6 {
-  padding-top: 71px;
-  margin-top: -71px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-
-<div class="container-fluid main-container">
-
-<!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
-
-<!-- code folding -->
-
-
-
-
-
-
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">RGLAB</a>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>RGLab</h1>
+        <p>Raphael Gottardo's Research Lab</p>
+        <h2>About us</h2>
+	<p>We are part of the <a href="http://www.fhcrc.org/en/labs/vaccine-and-infectious-disease.html">Vaccine and Infectious Disease Division</a> of <a href="http://www.rglab.org">Fred Hutch</a> in Seattle. 
+	We develop statistical methods and software tools for the analysis of high throughput biological data with an emphasis on immunology and vaccine research. 
+	We work with bench scientists and clinicians to understand and ultimately help develop vaccines and/or cure severe diseases such HIV, malaria and cancer.</p>
+        <ul>
+          <li><a href="https://github.com/RGLab">take a look at<strong>Github</strong></a></li>
+          <li><a href="https://twitter.com/raphg">follow us on<br><strong>Twitter</strong></a></li>
+	  <li><a href="mailto:rgottard@fredhutch.org">send us<strong>Email</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <ul>
+          <li><a href="#members">Members</a></li>
+          <li><a href="#pubs">Selected Publications</a></li>
+	  <li><a href="#alumni">Alumni</a></li>
+        </ul>
+        
+        <h2 id="members">Members</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Links</th>
+            </tr>
+            <tr>
+              <td>Raphael Gottardo</td>
+              <td>Principal Investigator</td>
+              <td><a href="https://github.com/raphg">Github</a>, <a href="https://twitter.com/raphg">Twitter</a></td>
+            </tr>
+            <tr>
+              <td>Greg Finak</td>
+              <td>Staff Scientist</td>
+              <td><a href="https://github.com/gfinak">Github</a></td>
+            </tr>
+            <tr>
+              <td>Greg Imholte</td>
+              <td>PhD Student</td>
+              <td><a href="https://github.com/gimholte">Github</a></td>
+            </tr>
+            <tr>
+              <td>Lev "Leo" Dashevkiy</td>
+              <td>Systems Analyst/Programmer</td>
+              <td><a href="https://github.com/ldash">Github</a></td>
+            </tr>
+            <tr>
+              <td>Mike Jiang</td>
+              <td>Systems Analyst/Programmer</td>
+              <td><a href="https://github.com/mikejiang">Github</a></td>
+            </tr>
+            <tr>
+              <td>Phu Van</td>
+              <td>Systems Analyst/Programmer</td>
+              <td><a href="https://github.com/ptvan">Github</a></td>
+            </tr>
+            <tr>
+              <td>Carl Murie</td>
+              <td>Systems Analyst/Programmer</td>
+              <td><a href="https://github.com/carlmurie">Github</a></td>
+            </tr>
+            <tr>
+              <td>Sam Koelle</td>
+              <td>PhD Student</td>
+              <td><a href="https://github.com/sjkoelle">Github</a></td>
+            </tr>
+            <tr>
+              <td>Mukta Dutta</td>
+              <td>Postdoctoral Fellow</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Gil Guday</td>
+              <td>Undergraduate Intern</td>
+              <td><a href="https://github.com/TheGilt">Github</a></td>
+            </tr>
+            <tr>
+              <td>Evan Greene</td>
+              <td>Postdoctoral Fellow</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Valentin Voillet</td>
+              <td>Postdoctoral Fellow</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Dror Berel</td>
+              <td>Systems Analyst/Programmer</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Chad Young</td>
+              <td>Data Scientist</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Evan Henrich</td>
+              <td>Systems Analyst/Programmer</td>
+              <td><a href="https://github.com/ehfhcrc">Github</a></td>
+            </tr>
+            <tr>
+              <td>Ju Yeong Kim</td>
+              <td>Systems Analyst/Programmer</td>
+              <td><a href="https://github.com/juyeongkim">Github</a>, <a href="https://twitter.com/platyjus">Twitter</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <img src="img/Lab-photo.jpg">
+        <p><i><small>From left to right: Jingyuan, Lynn, Mike, Sangsoon, Phu, Renan, Jacob, Leo, Raphael, Greg F., and Masanao.</small></i></p>
+        
+        <h2 id="pubs">Selected Publications</h2>
+        <ul>
+          <li>Florian Hladik, Adam Burgener, Lamar Ballweber, Raphael Gottardo, Slim Fourati, James Y. Dai, Mark J. Cameron, Lucia Vojtech, Johanna Strobl, Sean Hughes, M.A., Craig Hoesley, Ross Cranston, Philip Andrew, Jeanna Piper, T. Blake Ball, Gustavo F. Doncel, David R. Friend, Kenneth Mayer, M. Juliana McElrath, and Ian McGowan. Systems Biology Reveals Significant Mucosal Side Effects of Tenofovir 1% Gel in a Phase I Rectal Microbicide Trial. eLife, In Press.</li>
+          <li>Lin Lin, Greg Finak, Kevin Ushey, Chetan Seshadri, Thomas R. Hawn, Nicole Frahm, Thomas J. Scriba, Hassan Mahomed, Willem Hanekom, Pierre-Alexandre Bart, Giuseppe Pantaleo, Georgia Tomaras, Supachai Rerks-Ngarm, Jaranit Kaewkungwal, Sorachai Nitayanphan, Punnee Pitisuttithum, Nelson L. Michael, Jerome H. Kim, Merlin L. Robb, Robert J. O’Connell, Nicos Karasavvas, Bart Haynes, Peter Gilbert, Stephen DeRosa, Julie McElrath and Raphael Gottardo. Combinatorial Polyfunctionality Analysis of Antigen-Specific T-cell Subsets Identifies Novel Cellular Subsets Correlated with Clinical Outcomes. Nature Biotechnology, In Press.</li>
+          <li>Carey V, Carlson M, Corrada Bravo H, Carvalho BS, Davis S, Gatto L, Gentleman R, Girke T., Gottardo R., Hahne F., Hansen K., Huber W., Irizarry R. A., Lawrence M., MacDonald J, Obenchain V, Koles A, Pages H, Shannon P, Tenenbaum D, Waldron L, Morgan M. Orchestrating high-throughput genomic analysis with Bioconductor. Nature Methods, In Press.</li>
+          <li>Lin Lin, Jacob Frelinger, Mike Jiang, Greg Finak, Chetan Seshadri, Pierre-Alexandre Bart, Giuseppe Pantaleo, Julie McElrath, Steve DeRosa, and Raphael Gottardo. Identification and visualization of multidimensional antigen-specific T-cell populations in polychromatic cytometry data. Cytometry A, In Press.</li>
+          <li>Malek M, Taghiyar MJ, Chong L, Finak G, Gottardo R, Brinkman RR. flowDensity: reproducing manual gating of flow cytometry data by automated density-based cell population identification. Bioinformatics. 2015, 10.1093/bioinformatics/btu677. Epub ahead of print. PMID: 25378466.</li>
+        </ul>
+        
+        <h2 id="alumni">Alumni</h2>
+        <ul>
+          <li><a href="http://kevinushey.github.io/">Kevin Ushey</a>, Data Scientist at RStudio</li>
+          <li><a href="http://ramhiser.com/">John Ramey</a>, Principal Data Scientist at Novilabs</li>
+          <li><a href="http://compbio.ulaval.ca/">Arnaud Droit</a>, Associate Professor at Université Laval</li>
+          <li><a href="https://www.linkedin.com/in/marie-pier-scott-boyer-48b58064">Marie-Pier Scott-Boyer</a>, Postdoctoral Fellow at The Microsoft Research - University of Trento Centre for Computational and Systems Biology</li>
+          <li><a href="https://www.linkedin.com/in/eloi-mercier-7b62b574">Eloi Mercier</a>, Computational Biologist at BC Cancer Agency</li>
+          <li><a href="http://publish.illinois.edu/xiaohuichen/">Xiaohui Chen</a>, Assistant Professor, Department of Statistics, University of Illinois at Urbana-Champaign</li>
+          <li><a href="http://www.stats.ox.ac.uk/~caron/">Francois Caron</a>, Associate Professor, Department of Statistics, Oxford University</li>
+          <li><a href="http://www.lukebornn.com/">Luke Bornn</a>, Assistant Professor, Department of Statistics, Simon Fraser University</li>
+          <li><a href="https://www.linkedin.com/in/kaida-ning-0b64a314">Kaida Ning</a>, Biostatistician at Yale University</li>
+          <li><a href="https://www.linkedin.com/in/kenchlo">Kenneth Lo</a>, Data Scientist at Apple</li>
+          <li><a href="https://www.linkedin.com/in/jfrelinger">Jacob Frelinger</a>, ‎Site Reliability Engineer at Google</li>
+          <li><a href="http://www.personal.psu.edu/lul37/index.html">Lynn Lin</a>, Assistant Professor, Department of Statistics, Pennsylvania State University</li>
+          <li><a href="https://www.linkedin.com/in/sangsoon-woo-2936b248">Sangsoon Woo</a>, Statistical Geneticist at Axio Research</li>
+          <li><a href="https://www.linkedin.com/in/masanao">Masanao Yajima</a>, Associate Professor of Practice, Boston University</li>
+          <li><a href="http://amcdavid.github.io/">Andrew McDavid</a>, Assistant Professor, Department of Biostatistics and Computational Biology, University of Rochester</li>
+          <li><a href="http://srenan.github.io/web/">Renan Sauteraud</a>, PhD Student at Penn State University</li>
+          <li><a href="https://www.linkedin.com/in/jingyuan-deng-84640929">Jingyuan Deng</a>, Data Scientist</li>
+        </ul>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-    Home
-  </a>
-</li>
-<li>
-  <a href="research.html">
-    <span class="fa fa-pencil"></span>
-     
-    Research
-  </a>
-</li>
-<li>
-  <a href="publications.html">
-    <span class="fa fa-file-text"></span>
-     
-    Publications
-  </a>
-</li>
-<li>
-  <a href="software.html">
-    <span class="fa fa-laptop"></span>
-     
-    Software
-  </a>
-</li>
-<li>
-  <a href="members.html">
-    <span class="fa fa-user"></span>
-     
-    Members
-  </a>
-</li>
-<li>
-  <a href="contact.html">
-    <span class="fa fa-envelope"></span>
-     
-    Contact
-  </a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https://twitter.com/raphg">
-    <span class="fa fa-twitter"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://github.com/RGLab">
-    <span class="fa fa-github"></span>
-     
-  </a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div class="fluid-row" id="header">
-
-
-
-<h1 class="title toc-ignore">RGLAB::HOME</h1>
-
-</div>
-
-
-<blockquote>
-<h2 id="about-us">About us</h2>
-<p>We are part of the <a href="http://www.fredhutch.org/en/labs/vaccine-and-infectious-disease.html">Vaccine and Infectious Disease Division</a> of the <a href="https://www.fredhutch.org">Fred Hutchinson Cancer Research Center</a> in Seattle. We develop cutting edge statistical methods and software tools for the analysis of high throughput biological data with an emphasis on immunology and vaccine research. In particular we are interested in using system approaches, high throughput assays, and state-of-the-art computational approaches to predict how the immune system will respond to a particular infection of vaccination. We work with bench scientists and clinicians to understand and ultimately help develop vaccines and/or cure severe diseases such HIV, malaria and cancer.</p>
-</blockquote>
-<p><img src="site_libs/img/Lab-photo.jpg" /> <em>From left to right: Jingyuan, Lynn, Mike, Sangsoon, Phu, Renan, Jacob, Leo, Raphael, Greg F., and Masanao.</em></p>
-
-<hr>
-<p>Copyright &copy; 2017 <a href="http://www.rglab.org/">rglab</a>. All right reserved.</p>
-
-
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
 </html>
